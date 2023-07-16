@@ -122,16 +122,21 @@ const Shop = () => {
                 </a>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Shop
-                </a>
+              <a
+  className="nav-link dropdown-toggle"
+  href="#!"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  onClick={(e) => {
+    e.preventDefault();
+    return false;
+  }}
+>
+  Shop
+</a>
+
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#!">
